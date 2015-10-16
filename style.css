@@ -1,0 +1,249 @@
+/* REUSED */
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.clear{
+	clear: both;
+}
+
+.clear:before,
+.clear:after {
+	content: "";
+	display: table;
+}
+.clear:after {
+	clear: both;
+}
+
+.float-left {
+	float: left;
+}
+
+.float-right{
+	float: right;
+}
+
+body{
+  color: white;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body:before {
+  content: "";
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: -1;
+
+  background: url(img/bg4.jpg) no-repeat center center;
+  background-size: cover;
+  height: 100%;
+
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -o-filter: blur(10px);
+  -ms-filter: blur(10px);
+  filter: blur(10px);
+}
+
+.hidden{
+	display: none;
+}
+
+.base-container{
+#	background-color: #ca8383;
+    border: 1px solid rgba(0, 0, 0, 0.30);
+	width: 600px;
+	margin: 0 auto;
+	margin-top: 100px;
+}
+
+/* ================== HEADER ====================== */
+/* == HEADER == */
+.HEADER{
+	background-color: rgba(255, 255, 255, 0.5);
+	width: 100%;
+	height: 70px;
+}
+
+.header-left-container{
+#	background-color: blue;
+	width: 70px;
+	height: 70px;
+}
+
+	.header-buttons{
+#		background-color: fuchsia;
+		width: 57px;
+		height: 20px;
+		margin-top: 10px;
+		margin-left: 13px;
+	}
+	
+		span.header-button1{
+			border: 1px solid #e54b44;
+			border-radius: 50%;
+			background-color: #ff6159;
+			width: 13px;
+			height: 13px;
+			display: block;
+			margin-right: 4px;
+		}
+
+		span.header-button1:hover{
+			background-color: #e54b44;
+			cursor: pointer;
+}
+		span.header-button2{
+			border: 1px solid #e3a523;
+			border-radius: 50%;
+			background-color: #ffbe2f;
+			width: 13px;
+			height: 13px;
+			display: block;
+			margin-right: 4px;
+		}
+
+		span.header-button2:hover{
+			background-color: #e3a523;
+			cursor: pointer;
+}
+		span.header-button3{
+			border: 1px solid #1db02f;
+			border-radius: 50%;
+			background-color: #29cf42;
+			width: 13px;
+			height: 13px;
+			display: block;
+			margin-right: 4px;
+		}
+
+		span.header-button3:hover{
+			background-color: #1db02f;
+			cursor: pointer;
+}
+
+.header-middle-container{
+#	background-color: green;
+	width: 430px;
+	height: 20px;
+	margin-top: 35px;
+	font-size: 19px;
+	font-weight: 600;
+	text-align: center;
+}
+
+.header-right-container{
+#	background-color: yellow;
+	width: 100px;
+	height: 70px;
+}
+
+	.header-right-icons{
+#		background-color: fuchsia;
+		width: 70px;
+		height: 20px;
+		margin-top: 25px;
+		margin-left: 30px;
+	}
+
+		.header-right-icon{
+			margin-right: 15px;
+			    opacity: 0.5;  
+		}
+		
+		.header-right-icon:hover{
+			    opacity: 1;  
+		}
+
+.header-right-icons a{
+ color: white;	
+}
+
+/* ================== SIDEBAR ====================== */
+.SIDEBAR{
+	position: relative;
+#	background-color: fuchsia;
+	background-color: rgba(0, 0, 0, 0.7);
+	width: 70px;
+	height: 520px;
+}
+
+.sidebar-up{
+	
+}
+
+	.sidebar-up i{
+		font-size: 28px;
+		text-align: center;
+		margin-top: 10px;
+	}
+.sidebar-up > div{
+				width: 70px;
+		height: 70px;
+}
+
+
+.menu{
+	
+}
+
+.menu-item1{
+	background-color: #52596c;
+
+
+}
+
+i.fa.fa-home{
+
+		
+}
+
+
+.sidebar-down{
+	position: absolute;
+#	background-color: fuchsia;
+	width: 70px;
+	height: 25px;
+	text-align: center;
+	opacity: 0.5;
+	bottom: 20px;
+}
+
+.sidebar-down:hover{
+	opacity: 1;
+}
+
+
+/* ================== MAIN ====================== */
+.MAIN{
+#	background-color: red;
+	width: 530px;
+	height: 520px;
+}
+
+.task-buy{
+	background-color: #dec3c3;
+	width: 530px;
+	height: 200px;
+}
+.task-clean{
+	background-color: #bde284;
+	width: 265px;
+	height: 80px;
+}
+.task-cleanbig{
+	background-color: #8da3b1;
+	width: 265px;
+	height: 160px;
+}
+.task-do{
+	background-color: #b799ba;
+	width: 265px;
+	height: 800px;
+}
