@@ -9,15 +9,13 @@
 		<meta name="description" content="Darāmo lietu saraksts" />
 	<meta name="keywords" content="uzskaite, darbu saraksts, checklist, vienumu uzskaite">
 	<meta name="robots" content="index, follow">
-	
 </head>
-
 <body>
 <div class="base-container">
 	<div class="HEADER">
 		<div class="header-left-container float-left">
 			<div class="header-buttons">
-				<span class="header-button1 float-left"></span>
+				<a href="index.html"><span class="header-button1 float-left"></span></a>
 				<span class="header-button2 float-left"></span>
 				<span class="header-button3 float-left"></span>
 			</div>
@@ -25,39 +23,148 @@
 		<div class="header-middle-container float-left">All tasks</div>
 		<div class="header-right-container float-right">
 			<div class="header-right-icons">
-				<div class="header-right-icon float-left"><a href="#"><i class="fa fa-search fa-lg"></i></a></div>
-				<div class="header-right-icon float-left"><i class="fa fa-plus-circle fa-lg"></i></div>
+				<div class="header-right-icon float-left"><a href="search.html"><i class="fa fa-search fa-lg"></i></a></div>
+				<div class="header-right-icon float-left"><a href="add-new.html"><i class="fa fa-plus-circle fa-lg"></i></a></div>
 			</div>
 		</div>
 	</div>
 	<div class="SIDEBAR float-left">
 		<div class="sidebar-up">
 			<div class="menu-item1">
-				<i class="fa fa-home"></i>
+				<i class="fa fa-archive"></i>
+				<div class="active-arrow"></div>
 			</div>
 			<div class="menu-item2">
-				2
+				<i class="fa fa-home"></i>
 			</div>
 			<div class="menu-item3">
-				3
+				<i class="fa fa-briefcase"></i>
 			</div>
 			<div class="menu-item4">
-				4
+				<i class="fa fa-desktop"></i>
 			</div>
 			<div class="menu-item5">
-				5
+				<i class="fa fa-group"></i>
 			</div>
 		</div>
+		
 		<div class="sidebar-down">
 			<i class="fa fa-cog fa-lg"></i>
 		</div>
 	</div>
 	<div class="MAIN float-left">
-		<div class="task-buy"></div>
-		<div class="task-clean float-left"></div>
-		<div class="task-cleanbig float-left"></div>
-		
+		<div class="task-BIG-cont">
+			<div class="task-BIG-status-cont task-border-top float-left">
+				<div class="checkbox-element-container">
+					<div class="roundedTwo">
+						<input type="checkbox" value="None" id="rounded1" name="check" />
+						<label for="rounded1"></label>
+					</div>
+				</div>
+			</div>
+			<div class="task-BIG-desc-cont task-border-top task-border-right-red float-left">
+				<a href="detail-of-task.html">
+					<div class="task-BIG-meta-cont">
+						<div class="task-BIG-meta-location float-left"><span class="fa fa-map-marker"</span></div>
+						<div class="task-BIG-meta-info float-left">At Tesco | Next Monday</div>
+						<div class="task-BIG-meta-favorite float-right"><span class="fa fa-star"</span></div>
+					</div>
+				</a>
+				<div class="task-BIG-title-cont">
+					<div>Buy a new better toothbrush</div>
+				</div>
+			</div>
+		</div>
+		<div class="main-column-1of2 float-left">
+			<div class="task-SMALL-cont">
+				<div class="task-SMALL-status-cont task-border-top float-left">
+					<div class="checkbox-element-container">
+						<div class="roundedTwo">
+							<input type="checkbox" value="None" id="rounded2" name="check" />
+							<label for="rounded2"></label>
+						</div>
+					</div>
+				</div>
+				<div class="task-SMALL-desc-cont task-border-top task-border-left-red task-border-right-yellow float-left">
+					<div class="task-SMALL-meta-cont"><a href="#">Tomorrow</a></div>
+					<div class="task-SMALL-meta-title">Clean my room</div>
+				</div>
+			</div>
+			<div class="task-MIDDLE-cont">
+				<div class="task-MIDDLE-status-cont task-border-top float-left">
+					<div class="checkbox-element-container">
+						<div class="roundedTwo">
+							<input type="checkbox" value="None" id="rounded3" name="check" />
+							<label for="rounded3"></label>
+						</div>
+					</div>
+				</div>
+				<div class="task-MIDDLE-desc-cont task-border-top task-border-right-magenta float-left">
+					<div class="task-MIDDLE-meta-cont">18. September 2013</div>
+					<div class="task-MIDDLE-meta-title">Do a homework from ipsum dolor amet, consecteur adipiscing</div>
+				</div>								
+			</div>
+			<div class="task-SMALL-cont">
+				<div class="task-SMALL-status-cont task-border-top task-SMALL-status-cont-checked float-left">
+					<div class="checkbox-element-container">
+						<div class="roundedTwo">
+							<input type="checkbox" value="None" id="rounded4" name="check" checked/>
+							<label for="rounded4"></label>
+						</div>
+					</div>
+				</div>
+				<div class="task-SMALL-desc-cont task-border-top task-border-right-brown task-SMALL-desc-cont-checked float-left">
+					<div class="task-SMALL-meta-cont">Yesterday</div>
+					<div class="task-SMALL-meta-title">Buy a milk</div>
+				</div>				
+			</div>
+		</div>
+		<div class="main-column-2of2 float-left">
+			<div class="task-MIDDLE-cont">
+				<div class="task-MIDDLE-status-cont task-border-top float-left">
+					<div class="checkbox-element-container">
+						<div class="roundedTwo">
+							<input type="checkbox" value="None" id="rounded5" name="check" />
+							<label for="rounded5"></label>
+						</div>
+					</div>
+				</div>
+				<div class="task-MIDDLE-desc-cont task-border-top task-border-right-green float-left">
+					<div class="task-MIDDLE-meta-cont">14. September 2013</div>
+					<div class="task-MIDDLE-meta-title">Clean the house and mauris pretium purus id sapien consectetur</div>
+				</div>					
+			</div>
+			<div class="task-SMALL-cont">
+				<div class="task-SMALL-status-cont task-border-top task-SMALL-status-cont-checked float-left">
+					<div class="checkbox-element-container">
+						<div class="roundedTwo">
+							<input type="checkbox" value="None" id="rounded6" name="check" checked/>
+							<label for="rounded6"></label>
+						</div>
+					</div>
+				</div>
+				<div class="task-SMALL-desc-cont task-border-top task-border-right-purple task-SMALL-desc-cont-checked float-left">
+					<div class="task-SMALL-meta-cont">5. October 2013</div>
+					<div class="task-SMALL-meta-title">Gift for Petra</div>
+				</div>								
+			</div>
+			<div class="task-SMALL-cont">
+				<div class="task-SMALL-status-cont task-border-top task-SMALL-status-cont-checked float-left">
+					<div class="checkbox-element-container">
+						<div class="roundedTwo">
+							<input type="checkbox" value="None" id="rounded7" name="check" checked/>
+							<label for="rounded7"></label>
+						</div>
+					</div>
+				</div>
+				<div class="task-SMALL-desc-cont task-border-top task-border-right-gray task-SMALL-desc-cont-checked float-left">
+					<div class="task-SMALL-meta-cont">Last week</div>
+					<div class="task-SMALL-meta-title">Call to Jakub Antalík</div>
+				</div>								
+			</div>
+		</div>	
 	</div>	
 </div>		
 </body>
 </html>
+
