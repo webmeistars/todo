@@ -30,7 +30,7 @@ body{
   left: 0;
   right: 0;
   z-index: 0;
-#  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 body:before {
@@ -209,7 +209,7 @@ a:hover, a:visited, a:link, a:active{
 #	height: 0;
 	right: 0px;
 	top: 50%;
-	z-index: auto;
+	z-index: 7;
 	-webkit-transform: translatey(-50%);
 	-ms-transform: translatey(-50%);
 	transform: translatey(-50%);
@@ -522,10 +522,7 @@ input[type=checkbox] {
 		height: 25px;
 		text-align: center;
 	}
-	.task-BIG-meta-location a{
-		color: #979ba6;
-	}
-	.task-BIG-meta-location a:hover{
+	.task-BIG-meta-location:hover{
 		color: white;
 	}
 
@@ -537,10 +534,7 @@ input[type=checkbox] {
 		font-weight: bold;
 		margin-top: 3px;
 	}
-	.task-BIG-meta-info a{
-		color: #979ba6;
-	}
-	.task-BIG-meta-info a:hover{
+	.task-BIG-meta-info:hover{
 		color: white;
 	}
 
@@ -576,10 +570,7 @@ input[type=checkbox] {
 	font-size: 12px;
 	font-weight: bold;
 }
-.task-MIDDLE-meta-cont a{
-	color: #979ba6;
-}
-.task-MIDDLE-meta-cont a:hover{
+.task-MIDDLE-meta-cont:hover{
 	color: white;
 }
 
@@ -602,10 +593,7 @@ input[type=checkbox] {
 	font-size: 12px;
 	font-weight: bold;
 }
-.task-SMALL-meta-cont a{
-	color: #979ba6;
-}
-.task-SMALL-meta-cont a:hover{
+.task-SMALL-meta-cont:hover{
 	color: white;
 }
 
@@ -672,19 +660,6 @@ input[type=checkbox] {
 }
 
 /* ================== DETAILS OF TASK ====================== */
-.DETAILS-OVERLAY{
-	width: 320px;
-	height: 520px;
-
-	background-color: black;
-	opacity: 0.8;
-
-	position: absolute;
-	top: 0px;
-	left: 0px;
-
-	margin-top: 70px;
-}
 .DETAILS{
 	width: 320px;
 	height: 520px;
@@ -856,9 +831,9 @@ input[type=checkbox] {
 
 /* ================== CALENDAR ====================== */
 .CALENDAR{
-	width: 208px;
+	width: 206px;
 	height: 230px;
- #   border: 1px solid rgba(0, 0, 0, 0.30);
+    border: 1px solid rgba(0, 0, 0, 0.30);
 	background-color: white;
 	opacity: 1;
 	position: absolute;
@@ -874,34 +849,27 @@ input[type=checkbox] {
     font-weight: 600;
 	font-size: 17px;
     color: #414757;
-    border-collapse: collapse;
 }
 
 .calendar-table caption{
     background-color: #eceff6;
 }
 .calendar-table th{
-		width: 28px;
-	height: 28px;
     background-color: #eceff6;
     color: #838592;
     font-size: 10px;
     cursor: pointer;
     }
 .calendar-table td{
-	width: 28px;
-	height: 28px;
     font-size: 12px;
     font-weight: lighter;
     text-align: center;
     cursor: pointer;
-    border-radius: 50%;
-    border: 1px solid transparent;
 }
 .calendar-table td:hover{
- #   width: 28px;
- #   height: 28px;
- #   border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
     border: 1px solid red;
 }
 .calendar-table tbody {
@@ -910,7 +878,6 @@ input[type=checkbox] {
 
 .last{
 	color: #c2c3c5;
-
 }
 
 .month-changer{
