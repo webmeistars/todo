@@ -652,8 +652,8 @@ input[type=checkbox] {
 }
 
 .search-input-cont{
-#	background-color: lime;
-	width: 528px;
+#	background-color: red;
+	width: 458px;
 	height: 80px;
 #	color: white;	
 }
@@ -669,6 +669,22 @@ input[type=checkbox] {
 	border: none;
 	outline: none;
 	resize: none;
+}
+
+.search-right-icon-cont{
+#	background-color: lime;
+	width: 70px;
+	height: 80px;
+	cursor: pointer;
+}
+
+.search-right-icon-cont i{
+	opacity: 0.8;
+	color: #979ba6;
+	position: absolute;
+	top: 50%;
+	right: 26px;
+	-webkit-transform: translatey(-50%);
 }
 
 /* ================== DETAILS OF TASK ====================== */
@@ -874,14 +890,14 @@ input[type=checkbox] {
     font-weight: 600;
 	font-size: 17px;
     color: #414757;
-    border-collapse: collapse;
+ #  border-collapse: collapse;
 }
 
 .calendar-table caption{
     background-color: #eceff6;
 }
 .calendar-table th{
-		width: 28px;
+	width: 28px;
 	height: 28px;
     background-color: #eceff6;
     color: #838592;
@@ -938,12 +954,9 @@ input[type=checkbox] {
 	position: absolute;
 #	width: 0;
 #	height: 0;
-	left: -1px;
-	top: 50%;
-	z-index: 7;
-	-webkit-transform: translatey(-50%);
-	-ms-transform: translatey(-50%);
-	transform: translatey(-50%);
+	right: -6px;
+	top: 145px;
+	z-index: auto;
 	border-top: 6px solid transparent;
 	border-bottom: 6px solid transparent;
 	border-left: 6px solid white;
