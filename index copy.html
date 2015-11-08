@@ -63,13 +63,11 @@
 				</div>
 			</div>
 			<div class="task-BIG-desc-cont task-border-top task-border-right-red float-left">
-				<a href="detail-of-task.html">
-					<div class="task-BIG-meta-cont">
-						<div class="task-BIG-meta-location float-left"><span class="fa fa-map-marker"</span></div>
-						<div class="task-BIG-meta-info float-left">At Tesco | Next Monday</div>
-						<div class="task-BIG-meta-favorite float-right"><span class="fa fa-star"</span></div>
-					</div>
-				</a>
+				<div class="task-BIG-meta-cont">
+					<div class="task-BIG-meta-location float-left"><a href="detail-of-task.html"><span class="fa fa-map-marker"</span></a></div>
+					<div class="task-BIG-meta-info float-left"><a href="detail-of-task.html">At Tesco</a> | <a href="detail-of-task.html">Next Monday</a></div>
+					<div class="task-BIG-meta-favorite float-right"><span class="fa fa-star"</span></div>
+				</div>		
 				<div class="task-BIG-title-cont">
 					<div>Buy a new better toothbrush</div>
 				</div>
@@ -86,7 +84,7 @@
 					</div>
 				</div>
 				<div class="task-SMALL-desc-cont task-border-top task-border-left-red task-border-right-yellow float-left">
-					<div class="task-SMALL-meta-cont"><a href="#">Tomorrow</a></div>
+					<div class="task-SMALL-meta-cont"><a href="detail-of-task.html">Tomorrow</a></div>
 					<div class="task-SMALL-meta-title">Clean my room</div>
 				</div>
 			</div>
@@ -100,7 +98,7 @@
 					</div>
 				</div>
 				<div class="task-MIDDLE-desc-cont task-border-top task-border-right-magenta float-left">
-					<div class="task-MIDDLE-meta-cont">18. September 2013</div>
+					<div class="task-MIDDLE-meta-cont"><a href="detail-of-task.html">18. September 2013</a></div>
 					<div class="task-MIDDLE-meta-title">Do a homework from ipsum dolor amet, consecteur adipiscing</div>
 				</div>								
 			</div>
@@ -114,7 +112,7 @@
 					</div>
 				</div>
 				<div class="task-SMALL-desc-cont task-border-top task-border-right-brown task-SMALL-desc-cont-checked float-left">
-					<div class="task-SMALL-meta-cont">Yesterday</div>
+					<div class="task-SMALL-meta-cont"><a href="detail-of-task.html">Yesterday</a></div>
 					<div class="task-SMALL-meta-title">Buy a milk</div>
 				</div>				
 			</div>
@@ -130,7 +128,7 @@
 					</div>
 				</div>
 				<div class="task-MIDDLE-desc-cont task-border-top task-border-right-green float-left">
-					<div class="task-MIDDLE-meta-cont">14. September 2013</div>
+					<div class="task-MIDDLE-meta-cont"><a href="detail-of-task.html">14. September 2013</a></div>
 					<div class="task-MIDDLE-meta-title">Clean the house and mauris pretium purus id sapien consectetur</div>
 				</div>					
 			</div>
@@ -144,7 +142,7 @@
 					</div>
 				</div>
 				<div class="task-SMALL-desc-cont task-border-top task-border-right-purple task-SMALL-desc-cont-checked float-left">
-					<div class="task-SMALL-meta-cont">5. October 2013</div>
+					<div class="task-SMALL-meta-cont"><a href="detail-of-task.html">5. October 2013</a></div>
 					<div class="task-SMALL-meta-title">Gift for Petra</div>
 				</div>								
 			</div>
@@ -158,7 +156,7 @@
 					</div>
 				</div>
 				<div class="task-SMALL-desc-cont task-border-top task-border-right-gray task-SMALL-desc-cont-checked float-left">
-					<div class="task-SMALL-meta-cont">Last week</div>
+					<div class="task-SMALL-meta-cont"><a href="detail-of-task.html">Last week</a></div>
 					<div class="task-SMALL-meta-title">Call to Jakub Antalík</div>
 				</div>								
 			</div>
@@ -171,13 +169,17 @@
 		</div>
 		<div class="search-input-cont float-left">
             <form>
-                <textarea class="search-input" rows="1" cols="30" placeholder="Type here to search..." wrap="off" autofocus></textarea>
+                <textarea class="search-input" rows="1" cols="30" placeholder="Type and hit enter..." wrap="off" autofocus></textarea>
             </form>
+		</div>
+		<div class="search-right-icon-cont float-left">
+			<a href="index.html"><i class="fa fa-times-circle-o fa-lg"></i></a>
 		</div>
 	</div>
 	<!-- END SEARCH -->
 	
 	<!-- START DETAILS OF TASK -->
+	<div class="DETAILS-OVERLAY hidden"></div>
 	<div class="DETAILS hidden">
 		<div class="details-cont">
 			<div class="details-title">
@@ -207,7 +209,6 @@
 					</div>
 				</div>
 				<div class="details-desc float-left">
-					<div class="calendar-arrow"></div>
 					<div class="details-desc-element-cont">
 						Set a due date
 					</div>
@@ -262,6 +263,7 @@
 	<!-- END DETAILS OF TASK -->
 	<!-- START CALENDAR -->
 	<div class="CALENDAR hidden">
+		<div class="calendar-arrow"></div>
 		<table class="calendar-table">
 			  <caption><span class="month-changer"><span class="fa fa-chevron-left"></span></span>September<span class="month-changer"><span class="fa fa-chevron-right"></span></span></caption>
             <thead>
@@ -326,6 +328,9 @@
 	</div>
 	<!-- END CALENDAR -->
 	
+		
+	
+	
 	<!-- START ADD NEW -->
 	<div class="ADD-NEW hidden">
 		<div class="add-new-input-cont float-left">
@@ -362,21 +367,3 @@
 </div>		
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

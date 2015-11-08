@@ -6,55 +6,55 @@
 	  <link href='https://fonts.googleapis.com/css?family=Open+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 	<title>TO DO LIST</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-		<meta name="description" content="Darāmo lietu saraksts" />
+			<meta name="description" content="Darāmo lietu saraksts" />
 	<meta name="keywords" content="uzskaite, darbu saraksts, checklist, vienumu uzskaite">
 	<meta name="robots" content="index, follow">
 </head>
 <body>
 <div class="base-container">
-	<div class="HEADER">
-		<div class="header-left-container float-left">
-			<div class="header-buttons">
-				<a href="index.html"><span class="header-button1 float-left"></span></a>
-				<span class="header-button2 float-left"></span>
-				<span class="header-button3 float-left"></span>
+	<div class="header">
+		<div class="window-buttons-container float-left">
+			<div class="window-buttons">
+				<button class="window-button-close"></button>
+				<button class="window-button-minimize"></button>
+				<button class="window-button-maximize"></button>
 			</div>
 		</div>
-		<div class="header-middle-container float-left">All tasks</div>
-		<div class="header-right-container float-right">
-			<div class="header-right-icons">
-				<div class="header-right-icon float-left"><a href="search.html"><i class="fa fa-search fa-lg"></i></a></div>
-				<div class="header-right-icon float-left"><a href="add-new.html"><i class="fa fa-plus-circle fa-lg"></i></a></div>
+		<div class="window-title">All tasks</div>
+		<div class="service-buttons-cont">
+			<div class="service-buttons-subcont">
+				<button class="service-button"><i class="fa fa-search fa-lg"></i></button>
+				<button class="service-button"><i class="fa fa-plus-circle fa-lg"></i></button>
 			</div>
 		</div>
 	</div>
-	<div class="SIDEBAR float-left">
-		<div class="sidebar-up">
-			<div class="menu-item1">
+	<div class="sidebar">
+		<div class="menu-cont">
+			<button class="menu-all">
 				<i class="fa fa-archive"></i>
 				<div class="active-arrow"></div>
-			</div>
-			<div class="menu-item2">
+			</button>
+			<button class="menu-personal">
 				<i class="fa fa-home"></i>
-			</div>
-			<div class="menu-item3">
+			</button>
+			<button class="menu-work">
 				<i class="fa fa-briefcase"></i>
-			</div>
-			<div class="menu-item4">
+			</button>
+			<button class="menu-rest">
 				<i class="fa fa-desktop"></i>
-			</div>
-			<div class="menu-item5">
+			</button>
+			<button class="menu-friends">
 				<i class="fa fa-group"></i>
-			</div>
+			</button>
 		</div>
 		
-		<div class="sidebar-down">
-			<i class="fa fa-cog fa-lg"></i>
-		</div>
+		<button class="settings-cont">
+			<i class="fa fa-cog"></i>
+		</button>
 	</div>
-	<div class="MAIN float-left">
-		<div class="task-BIG-cont">
-			<div class="task-BIG-status-cont task-border-top float-left">
+	<div class="main">
+		<div class="task-actual-cont">
+			<div class="task-actual-status-cont task-border-top">
 				<div class="checkbox-element-container">
 					<div class="roundedTwo">
 						<input type="checkbox" value="None" id="rounded1" name="check" />
@@ -62,17 +62,18 @@
 					</div>
 				</div>
 			</div>
-			<div class="task-BIG-desc-cont task-border-top task-border-right-red float-left">
+			<div class="task-actual-desc-cont task-border-top home-task task">
 				<div class="task-BIG-meta-cont">
 					<div class="task-BIG-meta-location float-left"><a href="detail-of-task.html"><span class="fa fa-map-marker"</span></a></div>
 					<div class="task-BIG-meta-info float-left"><a href="detail-of-task.html">At Tesco</a> | <a href="detail-of-task.html">Next Monday</a></div>
 					<div class="task-BIG-meta-favorite float-right"><span class="fa fa-star"</span></div>
 				</div>		
 				<div class="task-BIG-title-cont">
-					<div>Buy a new better toothbrush</div>
+					<p>Buy a new better toothbrush</p>
 				</div>
 			</div>
 		</div>
+<!--
 		<div class="main-column-1of2 float-left">
 			<div class="task-SMALL-cont">
 				<div class="task-SMALL-status-cont task-border-top float-left">
@@ -161,9 +162,10 @@
 				</div>								
 			</div>
 		</div>	
+-->
 	</div>
 	<!-- START SEARCH -->
-	<div class="SEARCH">
+	<div class="SEARCH hidden">
 		<div class="search-left-icon-cont float-left">
 			<i class="fa fa-search fa-2x"></i>
 		</div>
@@ -171,6 +173,9 @@
             <form>
                 <textarea class="search-input" rows="1" cols="30" placeholder="Type and hit enter..." wrap="off" autofocus></textarea>
             </form>
+		</div>
+		<div class="search-right-icon-cont float-left">
+			<a href="index.html"><i class="fa fa-times-circle-o fa-lg"></i></a>
 		</div>
 	</div>
 	<!-- END SEARCH -->
@@ -206,7 +211,6 @@
 					</div>
 				</div>
 				<div class="details-desc float-left">
-					<div class="calendar-arrow"></div>
 					<div class="details-desc-element-cont">
 						Set a due date
 					</div>
@@ -261,6 +265,7 @@
 	<!-- END DETAILS OF TASK -->
 	<!-- START CALENDAR -->
 	<div class="CALENDAR hidden">
+		<div class="calendar-arrow"></div>
 		<table class="calendar-table">
 			  <caption><span class="month-changer"><span class="fa fa-chevron-left"></span></span>September<span class="month-changer"><span class="fa fa-chevron-right"></span></span></caption>
             <thead>
@@ -276,8 +281,8 @@
             </thead>
             <tbody>
                 <tr>
-                    <td class="last">24</td>
-                    <td class="last">25</td>
+                    <td class="last"><div class="cat">24</div></td>
+                    <td class="last"><div class="cat">25</div></td>
                     <td class="last">26</td>
                     <td class="last">27</td>
                     <td class="last">28</td>
@@ -325,12 +330,19 @@
 	</div>
 	<!-- END CALENDAR -->
 	
+		
+	
+	
 	<!-- START ADD NEW -->
+	<div class="add">
 	<div class="ADD-NEW hidden">
-		<div class="add-new-input-cont float-left">
+		<div class="add-new-input-cont float-left" contenteditable="true">
+			
+<!--
             <form>
                 <textarea class="add-new-input" rows="1" cols="30" placeholder="Add a new task" wrap="off" autofocus></textarea>
-            </form>			
+            </form>	
+-->		
 		</div>
 		<div class="add-new-right-icon-cont float-left">
 			<div class="add-new-right-icon-container">
@@ -358,24 +370,7 @@
 		</div>
 	</div>
 	<!-- END CATEGORY -->
+	</div>
 </div>		
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
