@@ -427,6 +427,11 @@ a:hover, a:visited, a:link, a:active{
 
 .task-active{
 	border-left: 2px solid #eb605b;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+
+	
 }
 
 .checked{
@@ -902,8 +907,10 @@ input[type=checkbox] {
     cursor: pointer;
     }
 .calendar-table td{
+/*
 	width: 28px;
 	height: 28px;
+*/
     font-size: 12px;
     font-weight: lighter;
     text-align: center;
@@ -922,6 +929,10 @@ input[type=checkbox] {
 }
 
 
+.calendar-table td >div{
+	width: 20px;
+	height: 20px;
+}
 
 .month-changer{
     text-decoration: none;
